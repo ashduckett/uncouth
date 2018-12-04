@@ -59,7 +59,7 @@ body {
 }
 
 .header__logo {
-    height: 3.5rem;
+    height: 5.5rem;
 }
 
 
@@ -171,53 +171,67 @@ body {
 }
 
 .portfolio {
-    height: 100vh;
-    // background-color: yellow;
-    margin: auto;
-    //width: 75%;
+    // height: 100px;
+//     // background-color: yellow;
+//     margin: auto;
+    // width: 50%;
 
     .websiteCollection {
-        //height: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        width: calc(75vh * 2);
-        margin: auto;
+//         //height: 100%;
+         display: flex;
+         flex-wrap: wrap;
+         justify-content: center;
+//         width: calc(75vh * 2);
+//         margin: auto;
     
-        .portfolioItem {
-            width: 75vh;
-            // padding-top: 37.5%;
-            height: 50vh;
-            padding: 10px;
+    .portfolioItem {
+        width: 35%;
+//             // padding-top: 37.5%;
+        // height: 100px;
+        padding: 10px;
+        
             
-            .imageContainer {
-                height: 100%;
-                width: 100%;
-                background-color: black;
-            }
+        .imageContainer {
+            // height: 100%;
+            width: 100%;
+            padding-top: 75%;
+            background-color: blue;
+            box-shadow: 5px 10px 18px #000;
         }
-
-        .portfolioItem:nth-child(odd) {
-            // background-color: blue;
-        }
-
-        .portfolioItem:nth-child(even) {
-            // background-color: lightblue;
-        }
-    
     }
-
-    
-
 }
 
-.about {
-    height: 100vh;
+//         .portfolioItem:nth-child(odd) {
+//             // background-color: blue;
+//         }
 
+//         .portfolioItem:nth-child(even) {
+//             // background-color: lightblue;
+//         }
+    
+}
+
+    
+
+// }
+
+.about {
+    &::after {
+        clear: both;
+        content: "";
+        display: block;
+    }
+
+
+//     height: 100vh;
+    // margin-top: 23rem;
+    margin-top: 23rem;
+    margin-bottom: 23rem;
     #aboutText {
-        // float: right;
-        // width: 25%;
+//         // float: right;
+//         // width: 25%;
         font-size: 2rem;
-        // margin-top: 12rem;
+//         // margin-top: 12rem;
     }
 
     .aboutHeaderAndText {
@@ -225,103 +239,170 @@ body {
         align-items: center;
         float: right;
         width: 40%;
-        height: 100%;
-        margin-right: 17rem;
+//         height: 100%;
+        margin-right: 29rem;
     }
 
     .aboutHeader {
         font-size: 9rem;
-        margin-right: 6rem;
+        margin-right: 17rem;
     }
 }
 
 .knowledge {
-    height: 100vh;
+    // height: 100px;
+//     // background-color: yellow;
+//     margin: auto;
+    // width: 50%;
+
+    .websiteCollection {
+//         //height: 100%;
+         display: flex;
+         flex-wrap: wrap;
+         justify-content: center;
+//         width: calc(75vh * 2);
+//         margin: auto;
     
-    // .portfolio {
-        height: 100vh;
-        // background-color: yellow;
-        margin: auto;
-        //width: 75%;
-    
-        .websiteCollection {
-            //height: 100%;
-            display: flex;
-            flex-wrap: wrap;
-            width: calc(75vh * 2);
-            margin: auto;
-        
-            .portfolioItem {
-                width: 75vh;
-                // padding-top: 37.5%;
-                height: 33.33vh;
-                padding: 10px;
+    .portfolioItem {
+        width: 35%;
+//             // padding-top: 37.5%;
+        // height: 100px;
+        padding: 10px;
+            
+        .imageContainer {
+            // height: 100%;
+            width: 100%;
+            padding-top: 75%;
+            background-color: blue;
+            
+            &:not(.knowledgeText) {
+                box-shadow: 5px 10px 18px #000;
+            }
+
+            &.knowledgeText {
+                background-color: transparent;
+                position: relative;
+                    .knowledgeHeader {
+                        font-size: 10vw;
+                        top: 0;
+                        position: absolute;
                 
-                .imageContainer {
-                    height: 100%;
-                    width: 100%;
-                    background-color: black;
-                
-                    &.knowledgeText {
-                        background-color: transparent;
-
-                        .knowledgeHeader {
-                            font-size: 15vh;
-
-                            .sub {
-                                transform: translateY(-42px);
-                            }
-                        }
-
-                        .super, .sub {
-                            display: block;
+                        .sub {
+                            transform: translateY(-42px);
                         }
                     }
-                
-                }
-    
-                
-    
-            }
-    
-            .portfolioItem:nth-child(odd) {
-                // background-color: blue;
-            }
-    
-            .portfolioItem:nth-child(even) {
-                // background-color: lightblue;
-            }
-        
-        }
-    
-        
-    
-    // }
 
+                    .super, .sub {
+                        display: block;
+                    }
+                }
+        }
+    }
 }
 
+//         .portfolioItem:nth-child(odd) {
+//             // background-color: blue;
+//         }
+
+//         .portfolioItem:nth-child(even) {
+//             // background-color: lightblue;
+//         }
+    
+}
+
+
+
+
+
+// .knowledge {
+//     height: 100vh;
+    
+//     // .portfolio {
+//         height: 100vh;
+//         // background-color: yellow;
+//         margin: auto;
+//         //width: 75%;
+    
+//         .websiteCollection {
+//             //height: 100%;
+//             display: flex;
+//             flex-wrap: wrap;
+//             width: calc(75vh * 2);
+//             margin: auto;
+        
+//             .portfolioItem {
+//                 width: 75vh;
+//                 // padding-top: 37.5%;
+//                 height: 33.33vh;
+//                 padding: 10px;
+                
+//                 .imageContainer {
+//                     height: 100%;
+//                     width: 100%;
+//                     background-color: black;
+                
+//                     &.knowledgeText {
+//                         background-color: transparent;
+
+//                         .knowledgeHeader {
+//                             font-size: 15vh;
+
+//                             .sub {
+//                                 transform: translateY(-42px);
+//                             }
+//                         }
+
+//                         .super, .sub {
+//                             display: block;
+//                         }
+//                     }
+                
+//                 }
+    
+                
+    
+//             }
+    
+//             .portfolioItem:nth-child(odd) {
+//                 // background-color: blue;
+//             }
+    
+//             .portfolioItem:nth-child(even) {
+//                 // background-color: lightblue;
+//             }
+        
+//         }
+    
+        
+    
+//     // }
+
+// }
+
 .contact {
-    height: 100vh;
-    position: relative;
-
-
+//     height: 100vh;
+//     position: relative;
+    
+    margin-top: 23rem;
+    margin-bottom: 23rem;
     .contactForm {
-        width: 60%;
+        width: 70%;
         margin: auto;
-        margin-top: 19rem;
-        // top: 50%;
-        // transform: translateY(-50%);
+        padding: 10px;
+//         margin-top: 19rem;
+//         // top: 50%;
+//         // transform: translateY(-50%);
 
-        label {
-            display: block;
-            font-size: 3rem;
-            padding: 1rem;
-        }
+         label {
+             display: block;
+             font-size: 3rem;
+             padding: 1rem;
+         }
 
         input {
             width: 100%;
             height: 4.5rem;
-            // margin-top: 1rem;
+            margin-top: 1rem;
             border: none;
             background-color: black;
             color: white;
@@ -334,6 +415,9 @@ body {
             border: none;
             background: black;
             height: 400px;
+            font-size: 3rem;
+            color: white;
+            padding-left: 1rem;
         }
     
         .submitButton {
@@ -349,14 +433,22 @@ body {
     }
 }
 
-input:focus,
-select:focus,
-textarea:focus,
-button:focus {
+input:focus, select:focus, textarea:focus, button:focus {
     outline: none;
 }
 
-footer {
-    height: 60px;
+.footer {
+    height: 150px;
     background-color: black;;
+    margin-top: 5rem;
+    display: flex;
+    align-items: center;
+    
+    &__logo {
+        margin-left: 5rem;
+    }
+}
+
+.stackIcon {
+    width: 5rem;
 }

@@ -54,7 +54,7 @@ body {
 }
 
 .header__logo {
-  height: 3.5rem;
+  height: 5.5rem;
 }
 
 .btn:link, .btn:visited {
@@ -151,32 +151,33 @@ body {
   }
 }
 
-.portfolio {
-  height: 100vh;
-  margin: auto;
-}
-
 .portfolio .websiteCollection {
   display: flex;
   flex-wrap: wrap;
-  width: calc(75vh * 2);
-  margin: auto;
+  justify-content: center;
 }
 
 .portfolio .websiteCollection .portfolioItem {
-  width: 75vh;
-  height: 50vh;
+  width: 35%;
   padding: 10px;
 }
 
 .portfolio .websiteCollection .portfolioItem .imageContainer {
-  height: 100%;
   width: 100%;
-  background-color: black;
+  padding-top: 75%;
+  background-color: blue;
+  box-shadow: 5px 10px 18px #000;
 }
 
 .about {
-  height: 100vh;
+  margin-top: 23rem;
+  margin-bottom: 23rem;
+}
+
+.about::after {
+  clear: both;
+  content: "";
+  display: block;
 }
 
 .about #aboutText {
@@ -188,46 +189,44 @@ body {
   align-items: center;
   float: right;
   width: 40%;
-  height: 100%;
-  margin-right: 17rem;
+  margin-right: 29rem;
 }
 
 .about .aboutHeader {
   font-size: 9rem;
-  margin-right: 6rem;
-}
-
-.knowledge {
-  height: 100vh;
-  height: 100vh;
-  margin: auto;
+  margin-right: 17rem;
 }
 
 .knowledge .websiteCollection {
   display: flex;
   flex-wrap: wrap;
-  width: calc(75vh * 2);
-  margin: auto;
+  justify-content: center;
 }
 
 .knowledge .websiteCollection .portfolioItem {
-  width: 75vh;
-  height: 33.33vh;
+  width: 35%;
   padding: 10px;
 }
 
 .knowledge .websiteCollection .portfolioItem .imageContainer {
-  height: 100%;
   width: 100%;
-  background-color: black;
+  padding-top: 75%;
+  background-color: blue;
+}
+
+.knowledge .websiteCollection .portfolioItem .imageContainer:not(.knowledgeText) {
+  box-shadow: 5px 10px 18px #000;
 }
 
 .knowledge .websiteCollection .portfolioItem .imageContainer.knowledgeText {
   background-color: transparent;
+  position: relative;
 }
 
 .knowledge .websiteCollection .portfolioItem .imageContainer.knowledgeText .knowledgeHeader {
-  font-size: 15vh;
+  font-size: 10vw;
+  top: 0;
+  position: absolute;
 }
 
 .knowledge .websiteCollection .portfolioItem .imageContainer.knowledgeText .knowledgeHeader .sub {
@@ -239,14 +238,14 @@ body {
 }
 
 .contact {
-  height: 100vh;
-  position: relative;
+  margin-top: 23rem;
+  margin-bottom: 23rem;
 }
 
 .contact .contactForm {
-  width: 60%;
+  width: 70%;
   margin: auto;
-  margin-top: 19rem;
+  padding: 10px;
 }
 
 .contact .contactForm label {
@@ -258,6 +257,7 @@ body {
 .contact .contactForm input {
   width: 100%;
   height: 4.5rem;
+  margin-top: 1rem;
   border: none;
   background-color: black;
   color: white;
@@ -270,6 +270,9 @@ body {
   border: none;
   background: black;
   height: 400px;
+  font-size: 3rem;
+  color: white;
+  padding-left: 1rem;
 }
 
 .contact .contactForm .submitButton {
@@ -282,14 +285,22 @@ body {
   margin-top: 1rem;
 }
 
-input:focus,
-select:focus,
-textarea:focus,
-button:focus {
+input:focus, select:focus, textarea:focus, button:focus {
   outline: none;
 }
 
-footer {
-  height: 60px;
+.footer {
+  height: 150px;
   background-color: black;
+  margin-top: 5rem;
+  display: flex;
+  align-items: center;
+}
+
+.footer__logo {
+  margin-left: 5rem;
+}
+
+.stackIcon {
+  width: 5rem;
 }
