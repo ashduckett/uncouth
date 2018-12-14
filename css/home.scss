@@ -17,7 +17,9 @@ body {
 
     background-image: url(../img/background-1.png);
     background-size: cover;
-    background-position: top;   
+    background-position: top;
+    
+    overflow-x: hidden;
 }
 
 nav {
@@ -37,6 +39,9 @@ nav {
     animation-name: moveInLeft;
     animation-duration: 1s;
     font-size: 7rem;
+    margin-left: 2rem;
+    text-transform: uppercase;
+    font-weight: 100;
 }
 
 .heading-primary--sub {
@@ -44,6 +49,9 @@ nav {
     animation-name: moveInRight;
     animation-duration: 1s;
     font-size: 7rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-left: 3px;
 }
 
 .header__text-box {
@@ -177,13 +185,33 @@ nav {
          flex-wrap: wrap;
          justify-content: center;
     
+
+    
+        
     .portfolioItem {
         width: 35%;
         padding: 10px;
+
+        .portfolioHeader {
+            font-size: 12vw;
+            z-index: 1;
+            transform: translateX(-50%);
+            position: absolute;
+            font-weight: 700;
+            color: white;
+
+            .sub {
+                transform: translateY(-75px);
+            }
+
+            .super, .sub {
+                display: block;
+            }
+        }
             
         .imageContainer {
             width: 100%;
-            padding-top: 75%;
+            padding-top: 57%;
             background-color: blue;
             box-shadow: 5px 10px 18px #000;
             position: relative;
@@ -253,7 +281,7 @@ nav {
             
         .imageContainer {
             width: 100%;
-            padding-top: 75%;
+            padding-top: 57%;
             background-color: blue;
             position: relative;
             img {
@@ -375,6 +403,10 @@ input:focus, select:focus, textarea:focus, button:focus {
                 width: 50%;
             }
         }
+    }
+
+    .portfolioHeader {
+        display: none;
     }
 }
 

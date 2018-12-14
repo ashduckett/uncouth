@@ -17,6 +17,7 @@ body {
   background-image: url(../img/background-1.png);
   background-size: cover;
   background-position: top;
+  overflow-x: hidden;
 }
 
 nav {
@@ -36,6 +37,9 @@ nav {
   animation-name: moveInLeft;
   animation-duration: 1s;
   font-size: 7rem;
+  margin-left: 2rem;
+  text-transform: uppercase;
+  font-weight: 100;
 }
 
 .heading-primary--sub {
@@ -43,6 +47,9 @@ nav {
   animation-name: moveInRight;
   animation-duration: 1s;
   font-size: 7rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-left: 3px;
 }
 
 .header__text-box {
@@ -171,9 +178,26 @@ nav {
   padding: 10px;
 }
 
+.portfolio .websiteCollection .portfolioItem .portfolioHeader {
+  font-size: 12vw;
+  z-index: 1;
+  transform: translateX(-50%);
+  position: absolute;
+  font-weight: 700;
+  color: white;
+}
+
+.portfolio .websiteCollection .portfolioItem .portfolioHeader .sub {
+  transform: translateY(-75px);
+}
+
+.portfolio .websiteCollection .portfolioItem .portfolioHeader .super, .portfolio .websiteCollection .portfolioItem .portfolioHeader .sub {
+  display: block;
+}
+
 .portfolio .websiteCollection .portfolioItem .imageContainer {
   width: 100%;
-  padding-top: 75%;
+  padding-top: 57%;
   background-color: blue;
   box-shadow: 5px 10px 18px #000;
   position: relative;
@@ -228,7 +252,7 @@ nav {
 
 .knowledge .websiteCollection .portfolioItem .imageContainer {
   width: 100%;
-  padding-top: 75%;
+  padding-top: 57%;
   background-color: blue;
   position: relative;
 }
@@ -346,6 +370,9 @@ input:focus, select:focus, textarea:focus, button:focus {
 @media all and (max-width: 1024px) {
   .portfolio .websiteCollection .portfolioItem, .knowledge .websiteCollection .portfolioItem {
     width: 50%;
+  }
+  .portfolioHeader {
+    display: none;
   }
 }
 
