@@ -39,19 +39,24 @@ function smoothScroll(target, duration) {
 // Wait for elements to load before adding event handlers...
 document.addEventListener('DOMContentLoaded', () => {
     
-    document.querySelector('.intro .nextArrow').addEventListener('click', function(evt) {
-        evt.preventDefault();
-        smoothScroll('.portfolio', 1000);
-    });
+    // document.querySelector('.intro .nextArrow').addEventListener('click', function(evt) {
+    //     evt.preventDefault();
+    //     smoothScroll('.portfolio', 1000);
+    // });
 
-    document.querySelector('.portfolio .nextArrow').addEventListener('click', function(evt) {
-        evt.preventDefault();
-        smoothScroll('.about', 1000);
-    });
+    // document.querySelector('.portfolio .nextArrow').addEventListener('click', function(evt) {
+    //     evt.preventDefault();
+    //     smoothScroll('.about', 1000);
+    // });
 
-    document.querySelector('.about .nextArrow').addEventListener('click', function(evt) {
-        evt.preventDefault();
-        smoothScroll('.knowledge', 1000);
+    // document.querySelector('.about .nextArrow').addEventListener('click', function(evt) {
+    //     evt.preventDefault();
+    //     smoothScroll('.knowledge', 1000);
+    // });
+
+    document.querySelector('.hamburger').addEventListener('click', function(evt) {
+        console.log('click')
+        this.classList.toggle('isActive');
     });
     
 

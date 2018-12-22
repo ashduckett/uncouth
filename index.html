@@ -5,7 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+    <link href="css/all.css" rel="stylesheet">
     <link href="css/home.css" rel="stylesheet">
+    <link href="css/popup.css" rel="stylesheet">
+    <script src="js/main.js"></script>
     <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png"/>
     <title>Uncouth Studios</title>
 </head>
@@ -14,6 +17,18 @@
         <nav>
             <div class="header__logo-box">
                 <img src="img/logo.png" alt="Logo" class="header__logo">
+            </div>
+            <ul class="desktopMenu">
+                <li>Home</li>
+                <li>Portfolio</li>
+                <li>About</li>
+                <li>Knowledge</li>
+                <li>Contact</li>
+            </ul>
+            <div class="hamburger">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
             </div>
         </nav>
         <h1 class="header__text-box">
@@ -32,6 +47,7 @@
                 <img class="stackIcon" src="img/android.svg">
                 <img class="stackIcon" src="img/ios.svg">
             </div>
+            
             <a href="#" class="btn btn--white btn--animated">Learn More</a>
         </h1>
     </header>
@@ -44,12 +60,12 @@
                             <span class="sub">folio</span>
                         </div>    
                 <div class="imageContainer">
-                    <img src="img/upminsterFlooring.png">
+                    <a href="#popup-1"><img src="img/upminsterFlooring.png"></a>
                 </div>
             </div>
             <div class="portfolioItem">
                 <div class="imageContainer">
-                    <img src="img/myreads.png">
+                    <a href="#popup-2"><img src="img/drivingSite.png"></a>
                 </div>
             </div>
             <div class="portfolioItem">
@@ -91,7 +107,7 @@
         <div class="websiteCollection">
             <div class="portfolioItem">
                 <div class="imageContainer">
-                        <img src="img/knowledge2.png">
+                        <img src="img/js.png">
                 </div>
             </div>
             <div class="portfolioItem">
@@ -133,12 +149,74 @@
             <input type="text">
             <label>Enquiry</label>
             <textarea></textarea>
-            <a class="submitButton" href="#">Submit</a>
+            <div class="submitButtonContainer">
+                <a class="submitButton" href="#">Submit</a>
+            </div>
         </form>
     </section>
     <footer class="footer">
         <img src="img/logo.png" alt="Logo" class="footer__logo">
     </footer>
 
+
+    <div class="popup" id="popup-1">
+        <div class="popup__content">
+            <div class="popup__body">
+                <div class="popup__left">
+                    <img src="img/upminsterFlooring.png" class="popup__img">
+                </div>
+                <div class="popup__right">
+                    <a href="#section-tours" class="popup__close">&times;</a>
+                    <h2 class="heading-secondary">Upminster Flooring</h2>
+                    <p class="popup__text">
+                        This site was actually part of a trial I did for an employer. It demonstrates layout in CSS and also building jQuery plugins with
+                        the use of jQuery as can be seen in the slider on the contact form at the bottom of the page. Note that since it was part of a trial,
+                        I won't provide a link to an actual site but I thought it was worth displaying here as it looks pretty good - based on a design not
+                        done by me! Also done in jQuery, although perhaps it shouldn't have been, was the slider underneath the main header. I'm not ashamed
+                        to admit I've learned a lot since I did this site.
+                    </p>
+                    <div class="popup__footer">
+                        <a class="popup__icon" href="#"><i class="fab fa-github"></i></a>        
+                        <a class="popup__icon" href="#"><i class="fas fa-brush"></i></a>
+                                    
+                        <a class="popup__icon" href="#"><i class="fas fa-heart"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <!--  -->
+    <div class="popup" id="popup-2">
+        <div class="popup__content">
+            <div class="popup__body">
+                <div class="popup__left">
+                    <img src="img/drivingSite.png" class="popup__img">
+                </div>
+                <div class="popup__right">
+                    <a href="#section-tours" class="popup__close">&times;</a>
+                    <h2 class="heading-secondary">Driving Site</h2>
+                    <p class="popup__text">
+                        The site as seen here is a site that I'm quite proud of. You can see various CSS effects such as the hover effect on the images in the header.
+                        There's also some JavaScript in action to make the map locations animate, as well as animated statistics when scrolled to. This site also
+                        has a database backend so there's a search system for the users and a simple CMS for the owner of the site. Also note the dynamic content
+                        as new items are added. This was done for a client and although rebranded for display here, the orginal site can be seen by clicking the link
+                        provided.
+                    </p>
+                    <div class="popup__footer">
+                        <a class="popup__icon" href="#"><i class="fab fa-github"></i></a>        
+                        <a class="popup__icon" href="#"><i class="fas fa-brush"></i></a>
+                                    
+                        <a class="popup__icon" href="#"><i class="fas fa-heart"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>

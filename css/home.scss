@@ -26,6 +26,7 @@ nav {
     height: 100px;
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
 .header {
@@ -71,7 +72,7 @@ nav {
 }
 
 .header__logo {
-    height: 5.5rem;
+    height: 3.5rem;
     margin-left: 3rem;
 }
 
@@ -397,6 +398,22 @@ input:focus, select:focus, textarea:focus, button:focus {
 }
 
 @media all and (max-width: 1024px) {
+    .desktopMenu {
+        display: none;
+    }
+
+    .contact {
+        margin-top: 15rem !important;
+        .contactForm {
+            width: 90% !important;
+        }
+    }
+
+    .hamburger {
+        display: block !important;
+    }
+
+
     .portfolio, .knowledge {
         .websiteCollection {
             .portfolioItem {
@@ -442,5 +459,51 @@ input:focus, select:focus, textarea:focus, button:focus {
 @media all and (max-width: 640px) {
     html {
         font-size: 33%;
+    }
+}
+
+.desktopMenu {
+    list-style-type: none;
+    margin-right: 5rem;
+
+    li {
+        display: inline-block;
+        font-size: 2.5rem;
+        color: white;
+        text-transform: uppercase;
+        margin-left: 3rem;
+        margin-right: 3rem;
+        font-weight: 300;
+    }   
+}
+
+.hamburger {
+    margin-right: 5rem;
+    display: none;
+    z-index: 1;
+    cursor: pointer;
+
+    .line {
+        width: 40px;
+        height: 2px;
+        display: block;
+        background-color: white;
+        border-radius: 10px;
+        margin: 6px auto;
+        transition: all .3s ease-in-out;
+    }
+
+    &.isActive {
+        .line:nth-child(1) {
+            transform: translateY(8px) rotate(45deg);
+        }
+
+        .line:nth-child(2) {
+            opacity: 0;
+        }
+
+        .line:nth-child(3) {
+            transform: translateY(-8px) rotate(-45deg);
+        }
     }
 }
