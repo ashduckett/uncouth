@@ -1,0 +1,404 @@
+#caseStudy {
+    @media all and (max-width: 1300px) {
+        .textAndImageContainer {
+            width: 75% !important;
+        }
+    }
+
+    @media all and (max-width: 700px) {
+        .textAndImageContainer {
+            width: 100% !important;
+        
+            .text {
+                padding: 2rem;
+            }
+        }
+
+
+    }
+
+
+    .hamburger {
+        display: none;
+    }
+
+    @media all and (max-width: 440px) {
+        .brandingText {
+            font-size: 1.5rem;
+        }
+    }
+
+    @media all and (max-width: 500px) {
+        .brandingText {
+            display: none;
+        }
+
+        .separatorAndText {
+            display: none;
+        }
+    }
+
+    @media all and (max-width: 700px) {
+        .textAndImageContainer {
+            margin: unset !important;
+        }
+        
+        .productText {
+            width: 100% !important;
+        }
+
+        .productImage {
+            width: 100% !important;
+            margin: unset !important;
+        }
+
+        .product {
+            padding-bottom: 0 !important;
+        }
+    }
+
+    @media all and (max-width: 1100px) {
+
+        .headerAndText {
+            flex-direction: column;
+            width: 90% !important;
+
+            .productHeader {
+                width: unset !important;
+                margin-bottom: 6rem;
+            }
+        }
+        .hamburger {
+        //    display: block !important;
+        }
+
+        .desktopMenu {
+            display: none;
+        }
+    }
+
+    .header__text-box {
+        font-size: 0;
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateY(-50%) translateX(-50%);
+        text-align: center;
+        color: white;
+    }
+
+    .header__logo-box {
+        top: 4rem;
+        left: 4rem;
+        display: flex;
+        align-items: center;
+        z-index: 1;
+    }
+
+    .header__logo {
+        height: 7.5rem;  
+        margin-left: 1.5rem;
+    }
+
+    .desktopMenu {
+        list-style-type: none;
+        margin-right: 5rem;
+        white-space: nowrap;
+        
+        // Hide the nav stuff only relevant to the home page.
+        display: none;
+
+        li {
+            display: inline-block;
+            font-size: 1.8rem;
+            color: white;
+            text-transform: uppercase;
+            margin-left: 3rem;
+            margin-right: 3rem;
+            font-weight: 300;
+
+            a {
+                color: white;
+                text-decoration: none;
+            }
+        }   
+    }
+
+    .hamburger {
+        margin-right: 1.5rem;
+        display: none;
+        z-index: 1;
+        cursor: pointer;
+
+        .line {
+            width: 40px;
+            height: 2px;
+            display: block;
+            background-color: white;
+            border-radius: 10px;
+            margin: 6px auto;
+            transition: all .3s ease-in-out;
+        }
+
+        &.isActive {
+            .line:nth-child(1) {
+                transform: translateY(8px) rotate(45deg);
+            }
+
+            .line:nth-child(2) {
+                opacity: 0;
+            }
+
+            .line:nth-child(3) {
+                transform: translateY(-8px) rotate(-45deg);
+            }
+        }
+    }
+
+
+
+    ul.mobileMenu {
+        position: absolute;
+        top: 0;
+        text-align: center;
+        width: 100%;
+        font-size: 5rem;
+        background-color: black;
+        height: 100vh;
+        display: flex;
+        opacity: 0;
+        pointer-events: none;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-evenly;
+        padding-top: 50px;
+        transition: opacity .3s;
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+        &.active {
+            opacity: 1;
+            pointer-events: all; 
+        }
+    }
+
+    nav {
+        a {
+            text-decoration: none;
+        }
+        // height: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: fixed;
+        width: 100%;
+        z-index: 100;
+        // background-color: black;
+        // position: relative;
+        // opacity: 0;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    background-image: none;
+    .header {
+        // background-color: lightblue;
+        // height: 500px;
+        background-image: url(../img/background-1.png);
+        background-size: cover;
+        background-position: top;
+        overflow: hidden;
+
+        .caseStudyHeaderImg {
+            display: block;
+            // height: 100%;
+            width: 50%;
+            margin: auto;
+            transform: translateY(25%);
+        }
+    }
+
+    .topSources {
+        background-color: #f7f7f7;
+    }
+
+    .caseStudyOverview {
+        .textAndImageContainer {
+            display: flex;
+            width: 50%;
+            margin: auto;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: column;
+            // margin: 6rem auto;
+            margin-top: 2rem;
+            // margin-top: 0;
+            // padding-top: 6rem;
+
+            .image {
+                img {
+                    width: 100%;
+                }
+            }
+
+            .text {
+                h2, p {
+                    margin-bottom: 2rem;
+                }
+
+                p {
+                    font-weight: 300;
+                }
+            }
+        }
+
+        // div {
+        //     // width: 50%;
+        // }
+    }
+
+    .product {
+        padding-top: 6rem;
+        padding-bottom: 6rem;
+
+        .headerAndText {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 50%;
+            margin: auto;
+            margin-bottom: 6rem;
+        }
+        background-color: #f7f7f7;
+        
+        .productHeader {
+            width: 40%;
+        }
+
+        .productText {
+            width: 60%;
+            font-weight: 300;
+        }
+
+        .productImage {
+            width: 50%;
+            display: block;
+            margin: 6rem auto;
+        }
+
+        .productImage:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    .sources {
+        display: flex;
+        margin: auto;
+        justify-content: space-evenly;
+        padding: 3rem;
+
+        a {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            text-decoration: none;
+            font-size: 1.5rem;
+
+            i {
+                font-size: 4rem;
+                color: black;
+                margin: 1rem;
+            }
+        }
+    }
+
+    .footer {
+        height: 100px;
+        background-color: black;;
+        // margin-top: 5rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        
+        &__logo {
+            margin-left: 3rem;
+            height: 7.5rem;
+        }
+    
+        .branding {
+            display: flex;
+            align-items: center;
+        }
+
+        .socialMediaIcons {
+            margin-right: 3rem;
+            font-size: 4rem;
+
+            a {
+                color: white;
+            }
+
+            a:not(:last-child) {
+                margin-right: 1.5rem ;
+            }
+        }
+    
+    }
+
+    .standardCaseStudyText {
+        font-size: 1.8rem;
+    }
+
+    .body-overlay {
+        background-color: white;
+        opacity: 0;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        position: absolute;
+        z-index: -1;
+    }
+
+    .headingOverlay {
+        background-color: white;
+        opacity: 0.1;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        position: absolute;
+        // z-index: -1;
+    }
+
+    .header {
+        position: relative;
+    }
+}

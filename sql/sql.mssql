@@ -1,0 +1,50 @@
+drop table portfolio_item;
+
+CREATE TABLE portfolio_item(id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY, title VARCHAR(512), heading_image_path VARCHAR(512), overview_image VARCHAR(512), detail_images VARCHAR(512), github_url VARCHAR(512), rebrand_site_url VARCHAR(512), actual_site_url VARCHAR(512), entry_text TEXT, detail_text TEXT);
+
+
+INSERT INTO portfolio_item(
+	title,
+    heading_image_path, 
+    overview_image, 
+    detail_images,
+    github_url, 
+    rebrand_site_url, 
+    actual_site_url, 
+    entry_text, 
+    detail_text
+) VALUES (
+	'Upminster Floors',
+	'img/portfolio/upminsterFlooring.png',
+    'img/portfolio/upminsterCaseStudyOverview.png',
+	'["img/portfolio/portfolioTheProduct1.png", "img/portfolio/portfolioTheProduct2.png"]',
+    'https://github.com/ashduckett/WFTemplate',
+    'http://uncouthstudios.com/upminsterfloors/',
+    NULL,
+    'This project was part of a trial I did for a company. I think it demostrates ability with CSS and HTML and I also managed to squeeze in the creation of a jQuery component down the bottom for a budget slider as well as the image sliders under the main header image. The layout matched the design and I got the job.',
+    'Whilst this project was just a trial piece, I managed to integrate HTML, CSS, JavaScript and jQuery into its development. Before aquiring the belief that things should be done as much as possible without jQuery, I rather enjoyed building plugins and I used that enthusiasm for the more complicated items on this website\'s home page.'
+);
+
+INSERT INTO portfolio_item(
+	title,
+    heading_image_path, 
+    overview_image, 
+    detail_images,
+    github_url, 
+    rebrand_site_url, 
+    actual_site_url, 
+    entry_text, 
+    detail_text
+) VALUES (
+	'Fast Lane Motorsports',
+	'img/portfolio/drivingSite.png',
+    'img/portfolio/drivingSite2.png',
+	'["img/portfolio/portfolioDriving1.png", "img/portfolio/portfolioDriving2.png"]',
+    'https://github.com/ashduckett/WFTemplate',
+    'http://uncouthstudios.com/fastlanemotorsports/',
+    NULL,
+    'This site is actually a rebrand of another site. The design was given to me, though it had many dynamic aspects which required the user of a backend with PHP and a database. The database dictates the images shown at the bottom of the home page, on the rebranded site shown as cars and tracks. There is also a search facility put together with JavaScript indirect interaction with the database through the PHP and there\'s also a basic CMS hand-built by me using all three technologies for front and backend work.',
+    'This turned out to be a project larger than what can be seen. With all of the images dynamic, a drafts system and the ability to easily edit images and their ratings and stats, it was a good project and one I\'m am proud of.'
+);
+
+select * from portfolio_item;
