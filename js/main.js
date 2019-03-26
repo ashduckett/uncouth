@@ -1,8 +1,3 @@
-
-
-
-
-
 function smoothScroll(target, duration) {
     var target = document.querySelector(target);
     var targetPosition = target.getBoundingClientRect().top - 100;
@@ -82,11 +77,8 @@ function setBackgroundOpacity() {
 document.addEventListener('scroll', function(evt) {
     setBackgroundOpacity();
     setNavOpacity();
-
-
-
-
 });
+
 function validateEmail(email) {
     var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     return re.test(String(email).toLowerCase());
@@ -188,12 +180,7 @@ document.addEventListener('DOMContentLoaded', () => {
                             document.querySelector('#fullNameTextField').value = '';
                             document.querySelector('#emailTextField').value = '';
                             document.querySelector('#enquiryTextField').value = '';
-
-                            
                         }, 2000);
-
-
-
                     } else if (xhr.status !== 200) {
                         alert('Request failed.  Returned status of ' + xhr.status);
                     }
@@ -201,20 +188,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 xhr.send(encodeURI('name=' + fullNameTextFieldVal + '&email=' + emailTextFieldVal + '&enquiry=' + enquiryTextFieldVal));
             }
         }
-
-
-
-
-
-
-
     });
-    
-    
-    
-    
-    
-    
     
     setBackgroundOpacity();
 
@@ -287,8 +261,4 @@ document.addEventListener('DOMContentLoaded', () => {
         document.querySelector('.mobileMenu').classList.toggle('active');
         document.querySelector('.hamburger').classList.toggle('isActive');
     });
-    
-
-
-
 }, false);

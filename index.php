@@ -25,15 +25,13 @@
                         <span class="line"></span>
                         <span class="line"></span>
                     </div>
-                    
-                        <ul class="mobileMenu">
-                            <li><a id="menuItemHome" href="#">Home</a></li>
-                            <li><a id="menuItemPortfolio" href="#">Portfolio</a></li>
-                            <li><a id="menuItemAbout" href="#">About</a></li>
-                            <li><a id="menuItemServices" href="#">Services</a></li>
-                            <li><a id="menuItemContact" href="#">Contact</a></li>
-                        </ul>
-                    
+                    <ul class="mobileMenu">
+                        <li><a id="menuItemHome" href="#">Home</a></li>
+                        <li><a id="menuItemPortfolio" href="#">Portfolio</a></li>
+                        <li><a id="menuItemAbout" href="#">About</a></li>
+                        <li><a id="menuItemServices" href="#">Services</a></li>
+                        <li><a id="menuItemContact" href="#">Contact</a></li>
+                    </ul>
                 </nav>
                 <h1 class="header__text-box">
                     <span class="heading-primary--main">Uncouth Studios</span>
@@ -43,8 +41,8 @@
                         <img class="stackIcon" src="img/css.svg">
                         <img class="stackIcon" src="img/sass.svg">
                         <img class="stackIcon" src="img/javascript.svg">
-                        <img class="stackIcon" src="img/node.svg">
-                        <img class="stackIcon" src="img/react.svg">
+                        <!-- <img class="stackIcon" src="img/node.svg"> -->
+                        <!-- <img class="stackIcon" src="img/react.svg"> -->
                         <img class="stackIcon" src="img/php.svg">
                         <!-- <img class="stackIcon" src="img/swift.svg"> -->
                         <!-- <img class="stackIcon" src="img/java.svg"> -->
@@ -108,7 +106,6 @@
                 </div>
             </section>
             <section class="servicesContainer">
-                <!-- <div class="servicesContainerOverlay"></div> -->
                 <h2 class="servicesTitle">Services</h2>
                 <div class="services">
                         
@@ -178,12 +175,10 @@
                     <div class="separatorAndText"></div>
                     <span class="brandingText">Uncouth Studios</span>
                 </div>
-
                 <div class="socialMediaIcons">
-                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.linkedin.com/company/13975266"><i class="fab fa-linkedin"></i></a>
                     <a href="https://twitter.com/uncouthstudios"><i class="fab fa-twitter"></i></a>
-                    <a href="https://www.facebook.com/Uncouth-Studios-2197410427253703"><i class="fab fa-facebook"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.instagram.com/uncouthstudios"><i class="fab fa-instagram"></i></a>
                 </div>
             </footer>
         </div>

@@ -1,14 +1,7 @@
 <?php
-
-    // Obtain items necessary for email.
-
     $name = $_POST['name'];
     $email = $_POST['email'];
     $enquiry = $_POST['enquiry'];
-
-   // echo 'Name is ' . $name . ' email is ' . $email . ' enquiry is ' . $enquiry;
-
-    // Now send an email
 
     $message = "Hi Ash, \n";
     $message .= "You have received an enquiry from your Uncouth Studios website from " . $name . "\n";
